@@ -1,0 +1,33 @@
+1. data.js --> this file is for handling data
+2. hello.js --> it contains the basic of JS
+3. Modules.js --> details about modules and require. modules are used in data.js
+4. FileSystem.js --> about the file system (Write, Read, Update file and folder)
+5. StreamsAndBuffer.js --> create readStream and writeStream - reead and write data in streams
+6. Server.js --> creating and listening to server. 
+                 Request objects like url, method
+                 Sending response (setHeader, write, end) as plain/text and html
+                 Basic redirection routes
+7. App.js --> ExpressJS ==> Replicating the code written in http server into expressJS
+              Sending plain text as response
+              Sending plain html as response
+              Sending html file as response
+              Basic routing & redirecting 
+8. Express(Folder) ==> Build an express app from scratch
+              Methods implementation: [GET, POST, PUT, PATCH, DELETE]
+              getUserById() -> optimising the redundant code using middleware
+9. Utils(Folder) ==> utilities required for the applicaiton
+                'import express-validator'
+                ValidationSchema.mjs --> Schema for the validation of the body
+                methods that are required for validation are imported
+10. Routes(Folder) ==> userRoutes.js
+                segregated the api based on the user, like optimising the routes corresponding to the user
+11. Cookie: small chunk of data sent from the server to the browser
+            npm i cookie-parser
+            'import cookieParser' from 'cookie-parser'
+            cookieParser is a middleware to get the data in JSON format
+12. Passport js ==> package used to authenticate the user to login
+13. models/User.mjs ==> Connect with mongodb
+                        npm i mongoose --> to install mongoose
+                        creating a schema to connect with db
+14. Helper.js ==> to hash the password for security concerns
+                  npm i bcrypt                    
